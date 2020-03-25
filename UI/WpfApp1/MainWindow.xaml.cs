@@ -82,6 +82,16 @@ namespace WpfApp1
 
         private void new_Click(object sender, RoutedEventArgs e)
         {
+            textbox1.Text = "";
+        }
+
+        private void Minimize_click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void textbox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
         }
     }
