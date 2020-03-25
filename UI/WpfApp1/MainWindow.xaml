@@ -49,7 +49,7 @@
                     <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="23,570,0,0" FontFamily="Adobe Myungjo Std M" FontSize="20" FontWeight="Bold" Foreground="#FFD3A312" Height="128" Width="340"><Run Text="Guide"/><LineBreak/><Run FontSize="11" Text="Save :"/><LineBreak/><Run FontSize="11" Text="Load :"/><LineBreak/><Run FontSize="11" Text="New :"/><LineBreak/><Run FontSize="11" Text="R :"/></TextBlock>
 
 
-                    <ComboBox x:Name="doc1" IsEditable="True" FontFamily="Adobe Myungjo Std M" FontStyle="Oblique" FontSize="14px" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="362,101,0,0" Width="138" Height="31" Background="#FF681E1E" Foreground="#FF681E1E">
+                    <ComboBox x:Name="doc1" FontFamily="Adobe Myungjo Std M" FontStyle="Oblique" FontSize="14px" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="362,102,26.4,0" Width="138" Height="31" Background="#FF681E1E" Foreground="#FF681E1E">
                         
                         <ComboBoxItem Content="Tehran"/>
                         <ComboBoxItem Content="Kashan"/>
