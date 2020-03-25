@@ -26,7 +26,27 @@
                     </Grid.ColumnDefinitions>
                     <Button Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Margin="491,3,0,0" Height="35" Background="#FF681E1E" Click="Exit_click" Foreground="#FFD3A312" OpacityMask="#FF2A2A2C"/>
                     <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-                    <Button x:Name="btn1" Content="Next Page" HorizontalAlignment="Left" Height="44" Margin="143,644,0,0" VerticalAlignment="Top" Width="240" Click="nextpg_Click"/>
+                    <Button x:Name="btn1" Content="Next Page" HorizontalAlignment="Left" Height="44" Margin="146,654,0,0" VerticalAlignment="Top" Width="240" Click="nextpg_Click"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Tick the boxes :" VerticalAlignment="Top" Margin="23,46,0,0" FontFamily="Adobe Myungjo Std M" FontSize="20" FontWeight="Bold" Foreground="#FFD3A312"/>
+                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="123" VerticalAlignment="Top" Width="304" Margin="23,92,0,0"/>
+                    <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Margin="362,101,0,0" Height="31"/>
+                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,119,0,0"/>
+                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,149,0,0"/>
+                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,179,0,0"/>
+                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,119,0,0"/>
+                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,149,0,0"/>
+                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,179,0,0"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Enter the information :" VerticalAlignment="Top" Margin="23,222,0,0" FontFamily="Adobe Myungjo Std M" FontSize="20" FontWeight="Bold" Foreground="#FFD3A312"/>
+                    <TextBox x:Name="textbox1" HorizontalAlignment="Left" Height="178" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="477" Margin="23,272,0,0" BorderBrush="#FFB4A012"/>
+
+                    <Button x:Name="new" Content="New" HorizontalAlignment="Left" Height="44" Margin="81,521,0,0" VerticalAlignment="Top" Width="365" Click="new_Click"/>
+                    <Button x:Name="save" Content="Save" HorizontalAlignment="Left" Height="44" Margin="81,468,0,0" VerticalAlignment="Top" Width="130" Click="save_Click"/>
+                    <Button x:Name="load" Content="Load" HorizontalAlignment="Left" Height="44" Margin="233,468,0,0" VerticalAlignment="Top" Width="130" Click="load_Click"/>
+                    <Button x:Name="r" Content="R" HorizontalAlignment="Left" Height="44" Margin="385,468,0,0" VerticalAlignment="Top" Width="61" Click="r_Click"/>
+
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Guide" VerticalAlignment="Top" Margin="23,570,0,0" FontFamily="Adobe Myungjo Std M" FontSize="20" FontWeight="Bold" Foreground="#FFD3A312"/>
+
+
                 </Grid>
             </TabItem>
 
@@ -36,11 +56,12 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Button Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Margin="491,3,0,0" Height="35" Background="#FF681E1E" Click="Exit_click" Foreground="#FFD3A312" OpacityMask="#FF2A2A2C" RenderTransformOrigin="0.474,-0.326"/>
-                    <Button x:Name="btn1_Copy" Content="Previous Page" HorizontalAlignment="Left" Height="44" Margin="143,644,0,0" VerticalAlignment="Top" Width="240" Click="prepg_Click"/>
+                    <Button x:Name="btn1_Copy" Content="Previous Page" HorizontalAlignment="Left" Height="44" Margin="146,644,0,0" VerticalAlignment="Top" Width="240" Click="prepg_Click"/>
                 </Grid>
             </TabItem>
 
         </TabControl>
+
 
     </Grid>
 </Window>

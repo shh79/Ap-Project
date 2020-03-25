@@ -64,5 +64,25 @@ namespace WpfApp1
         {
 
         }
+
+        private void save_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void load_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void r_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void new_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
