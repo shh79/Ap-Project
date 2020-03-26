@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp1.Changepass"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Changepass" Height="228.334" Width="385.333" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="img/1.jpg"/>
+    </Window.Background>
+    <Grid>
+        <DockPanel HorizontalAlignment="Left" Height="35" LastChildFill="False" VerticalAlignment="Top" Width="386" Margin="0,0,-0.4,0" Background="#FF2A2A2C"/>
+        <PasswordBox x:Name="Cpass" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,49,0,0" Width="199" Height="27" FontSize="18"/>
+        <PasswordBox x:Name="Npass" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,85,0,0" Width="199" Height="27" FontSize="18"/>
+        <PasswordBox x:Name="RNpass" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,121,0,0" Width="199" Height="27" FontSize="18"/>
+
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Current Password :" VerticalAlignment="Top" Margin="10,49,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="New Password :" VerticalAlignment="Top" Margin="10,85,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Retry New Password :" VerticalAlignment="Top" Margin="10,121,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M"/>
+
+
+        <Button x:Name="confirm" Content="Confirm" HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="21,187,0,0" Foreground="#FFD3A312" Click="confirm_Click" Background="#FF681E1E" Height="21" FontSize="12" FontFamily="Adobe Myungjo Std M"/>
+        <Button x:Name="new" Content="New" HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="143,187,0,0" Foreground="#FFD3A312" Click="New_Click" Background="#FF681E1E" Height="21" FontSize="12" FontFamily="Adobe Myungjo Std M"/>
+        <Button x:Name="cancle" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="265,187,0,0" Foreground="#FFD3A312" Click="Cancle_Click" Background="#FF681E1E" Height="21" FontSize="12" FontFamily="Adobe Myungjo Std M"/>
+
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Changing Password" VerticalAlignment="Top" Margin="115,2,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="16"/>
+
+    </Grid>
+</Window>

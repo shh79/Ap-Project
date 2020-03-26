@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace WpfApp1
 {
@@ -19,14 +20,23 @@ namespace WpfApp1
     /// </summary>
     public partial class loginpass : Window
     {
+
+        public string pass = "";
+
         public loginpass()
         {
             InitializeComponent();
+
+            StreamReader reader = new StreamReader("pass.txt");
+
+            pass = reader.ReadLine();
+
+            reader.Close();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (passbar.Password == "0000")
+            if (passbar.Password == pass)
             {
                 
                 MainWindow main = new MainWindow();

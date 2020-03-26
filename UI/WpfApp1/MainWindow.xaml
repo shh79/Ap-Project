@@ -49,8 +49,8 @@
 
                     <ComboBox x:Name="doc1" Text="City" FontFamily="Adobe Myungjo Std M" FontStyle="Oblique" FontSize="14px" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="362,102,26.4,0" Width="138" Height="31" Background="#FF681E1E" Foreground="#FF681E1E">
 
-                       
-                        
+
+
                         <ComboBoxItem Content="Tehran"/>
                         <ComboBoxItem Content="Kashan"/>
                         <ComboBoxItem Content="Yazd"/>
@@ -93,6 +93,20 @@
 
                 </Grid>
             </TabItem>
+
+
+
+            <TabItem x:Name="setting" Header="Setting" Margin="0,0,0,-11" HorizontalAlignment="Right" Width="60" FontWeight="Bold" Foreground="#FFD3A312" BorderBrush="#FFACACAC" Background="#FF681E1E">
+                <Grid Margin="0,-23,-2.6,-0.4" Height="724" VerticalAlignment="Bottom">
+
+                    <Button Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Margin="491,3,0,0" Height="35" Background="#FF681E1E" Click="Exit_click" Foreground="#FFD3A312" OpacityMask="#FF2A2A2C" RenderTransformOrigin="0.474,-0.326" FontFamily="Adobe Myungjo Std M" FontSize="14"/>
+                    <Button Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Margin="451,3,0,0" Height="35" Background="#FF681E1E" Click="Minimize_click" Foreground="#FFD3A312" OpacityMask="#FF2A2A2C"/>
+                    <Button Content="Change Password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="149" Margin="52,95,0,0" Height="45" Click="Changepass"/>
+                    
+                </Grid>
+
+            </TabItem>
+
 
         </TabControl>
 

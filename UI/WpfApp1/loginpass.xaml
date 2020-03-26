@@ -20,7 +20,7 @@
 
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Default pass is : 0000" VerticalAlignment="Top" Margin="100,46,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="18"/>
 
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Created by Hessam Hosseini" VerticalAlignment="Top" Margin="10,4,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Created by SeyedHessam Hosseini" VerticalAlignment="Top" Margin="10,4,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="14"/>
 
 
     </Grid>

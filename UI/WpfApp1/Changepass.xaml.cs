@@ -1,0 +1,80 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using System.IO;
+
+namespace WpfApp1
+{
+    /// <summary>
+    /// Interaction logic for Changepass.xaml
+    /// </summary>
+    public partial class Changepass : Window
+    {
+        public Changepass()
+        {
+            InitializeComponent();
+        }
+
+        private void confirm_Click(object sender, RoutedEventArgs e)
+        {
+            string pass = "";
+            StreamReader reader = new StreamReader("pass.txt");
+
+            pass = reader.ReadLine();
+
+            reader.Close();
+
+            if (pass == Cpass.Password)
+            {
+                if (Npass.Password == RNpass.Password)
+                {
+                    StreamWriter writer = new StreamWriter("pass.txt");
+
+                    writer.WriteLine(Npass.Password);
+
+                    writer.Close();
+
+                    MessageBoxResult r = MessageBox.Show("Password Changed .", "Successful", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    if (r == MessageBoxResult.OK)
+                    {
+                        this.Close();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Your new password is not match .", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Current password is wrong .", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+        }
+
+        private void New_Click(object sender, RoutedEventArgs e)
+        {
+            Cpass.Password = "";
+            Npass.Password = "";
+            RNpass.Password = "";
+        }
+
+        private void Cancle_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+    }
+}

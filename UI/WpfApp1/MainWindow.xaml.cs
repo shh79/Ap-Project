@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace WpfApp1
 {
@@ -112,6 +113,13 @@ namespace WpfApp1
         private void Run_btn_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Changepass(object sender, RoutedEventArgs e)
+        {
+            Changepass win = new Changepass();
+
+            win.ShowDialog();
         }
     }
 }
