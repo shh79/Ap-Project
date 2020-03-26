@@ -7,10 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="724.971" Width="532.346" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="633*"/>
-            <RowDefinition Height="92*"/>
-        </Grid.RowDefinitions>
+
         <Grid.Background>
             <ImageBrush ImageSource="img/1.jpg"/>
         </Grid.Background>
@@ -32,14 +29,14 @@
                     <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Tick the boxes :" VerticalAlignment="Top" Margin="23,46,0,0" FontFamily="Adobe Myungjo Std M" FontSize="20" FontWeight="Bold" Foreground="#FFD3A312"/>
                     <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="123" VerticalAlignment="Top" Width="304" Margin="23,92,0,0"/>
 
-                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,119,0,0"/>
-                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,149,0,0"/>
-                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,179,0,0"/>
-                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,119,0,0"/>
-                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,149,0,0"/>
-                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,179,0,0"/>
+                    <CheckBox x:Name="cb1" Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,119,0,0"/>
+                    <CheckBox x:Name="cb2" Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,149,0,0"/>
+                    <CheckBox x:Name="cb3" Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,179,0,0"/>
+                    <CheckBox x:Name="cb4" Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,119,0,0"/>
+                    <CheckBox x:Name="cb5" Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,149,0,0"/>
+                    <CheckBox x:Name="cb6" Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,179,0,0"/>
                     <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Enter the information :" VerticalAlignment="Top" Margin="23,222,0,0" FontFamily="Adobe Myungjo Std M" FontSize="20" FontWeight="Bold" Foreground="#FFD3A312"/>
-                    <TextBox x:Name="textbox1" HorizontalAlignment="Left" Height="178" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="477" Margin="23,272,0,0" BorderBrush="#FFB4A012" FontSize="20" FontFamily="Adobe Hebrew" FontWeight="Normal" Background="White" TextChanged="textbox1_TextChanged"/>
+                    <TextBox x:Name="textbox1" HorizontalAlignment="Left" Height="178" TextWrapping="Wrap" VerticalAlignment="Top" Width="477" Margin="23,272,0,0" BorderBrush="#FFB4A012" FontSize="20" FontFamily="Adobe Hebrew" FontWeight="Normal" Background="White" TextChanged="textbox1_TextChanged"/>
 
                     <Button x:Name="new" Content="New" HorizontalAlignment="Left" Height="44" Margin="81,521,0,0" VerticalAlignment="Top" Width="365" Click="new_Click" Foreground="#FFD3A312" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="22"/>
                     <Button x:Name="save" Content="Save" HorizontalAlignment="Left" Height="44" Margin="81,468,0,0" VerticalAlignment="Top" Width="130" Click="save_Click" Foreground="#FFD3A312" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="22"/>
@@ -50,7 +47,7 @@
 
 
                     <ComboBox x:Name="doc1" FontFamily="Adobe Myungjo Std M" FontStyle="Oblique" FontSize="14px" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="362,102,26.4,0" Width="138" Height="31" Background="#FF681E1E" Foreground="#FF681E1E">
-                        
+
                         <ComboBoxItem Content="Tehran"/>
                         <ComboBoxItem Content="Kashan"/>
                         <ComboBoxItem Content="Yazd"/>
@@ -77,10 +74,25 @@
                     <Button Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Margin="451,3,0,0" Height="35" Background="#FF681E1E" Click="Minimize_click" Foreground="#FFD3A312" OpacityMask="#FF2A2A2C"/>
 
                     <Button x:Name="btn1_Copy" Content="Previous Page" HorizontalAlignment="Left" Height="44" Margin="30,654,0,0" VerticalAlignment="Top" Width="85" Click="prepg_Click" Background="#FF681E1E" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="11"/>
+
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name :" VerticalAlignment="Top" Margin="46,126,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="20"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Family :" VerticalAlignment="Top" Margin="46,200,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="20"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Age :" VerticalAlignment="Top" Margin="46,277,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="20"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Equations :" VerticalAlignment="Top" Margin="46,354,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="20"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Enter the informations :" VerticalAlignment="Top" Margin="30,54,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="22"/>
+                    <TextBox x:Name="Name_box" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Margin="218,137,0,0" BorderBrush="#FFB4A012" FontSize="20" FontFamily="Adobe Hebrew"/>
+                    <TextBox x:Name="Family_box" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Margin="218,210,0,0" BorderBrush="#FFB4A012" FontSize="20" FontFamily="Adobe Hebrew"/>
+                    <TextBox x:Name="Age_box" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Margin="218,289,0,0" BorderBrush="#FFB4A012" FontSize="20" FontFamily="Adobe Hebrew"/>
+                    <TextBox x:Name="Equa_box" HorizontalAlignment="Left" Height="110" TextWrapping="Wrap"  VerticalAlignment="Top" Width="212" Margin="218,368,0,0" BorderBrush="#FFB4A012" FontSize="20" FontFamily="Adobe Hebrew"/>
+
+                    <Image HorizontalAlignment="Left" Height="144" VerticalAlignment="Top" Width="137" Margin="349,554,0,0" Source="img/IUSTlogo.png"/>
+                    <Button x:Name="Run_btn" Content="Run" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Margin="46,532,0,0" Background="#FF681E1E" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" Click="Run_btn_Click" Height="36" FontSize="19"/>
+
                 </Grid>
             </TabItem>
 
         </TabControl>
+
 
 
     </Grid>

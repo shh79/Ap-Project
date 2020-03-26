@@ -25,6 +25,8 @@ namespace WpfApp1
             InitializeComponent();
         }
 
+        
+
         private void Exit_click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult r = MessageBox.Show("Are you sure ?", "Exit", MessageBoxButton.YesNo, MessageBoxImage.Question);
@@ -67,12 +69,12 @@ namespace WpfApp1
 
         private void save_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void load_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void r_Click(object sender, RoutedEventArgs e)
@@ -83,6 +85,15 @@ namespace WpfApp1
         private void new_Click(object sender, RoutedEventArgs e)
         {
             textbox1.Text = "";
+
+            cb1.IsChecked = false;
+            cb2.IsChecked = false;
+            cb3.IsChecked = false;
+            cb4.IsChecked = false;
+            cb5.IsChecked = false;
+            cb6.IsChecked = false;
+
+            
         }
 
         private void Minimize_click(object sender, RoutedEventArgs e)
@@ -91,6 +102,11 @@ namespace WpfApp1
         }
 
         private void textbox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Run_btn_Click(object sender, RoutedEventArgs e)
         {
 
         }
