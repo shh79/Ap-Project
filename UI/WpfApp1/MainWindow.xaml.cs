@@ -23,6 +23,7 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         
@@ -92,6 +93,8 @@ namespace WpfApp1
             cb4.IsChecked = false;
             cb5.IsChecked = false;
             cb6.IsChecked = false;
+
+            doc1.Text = "";
 
             
         }

@@ -26,3 +26,5 @@ E:\دانشگاه\Term2\AP Project\UI\WpfApp1\obj\Debug\WpfApp1.Properties.Resou
 E:\دانشگاه\Term2\AP Project\UI\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
 E:\دانشگاه\Term2\AP Project\UI\WpfApp1\obj\Debug\WpfApp1.exe
 E:\دانشگاه\Term2\AP Project\UI\WpfApp1\obj\Debug\WpfApp1.pdb
+E:\دانشگاه\Term2\AP Project\UI\WpfApp1\obj\Debug\loginpass.g.cs
+E:\دانشگاه\Term2\AP Project\UI\WpfApp1\obj\Debug\loginpass.baml
