@@ -22,7 +22,7 @@
 
 
         <Button x:Name="confirm" Content="Confirm" HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="21,187,0,0" Foreground="#FFD3A312" Click="confirm_Click" Background="#FF681E1E" Height="21" FontSize="12" FontFamily="Adobe Myungjo Std M"/>
-        <Button x:Name="new" Content="New" HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="143,187,0,0" Foreground="#FFD3A312" Click="New_Click" Background="#FF681E1E" Height="21" FontSize="12" FontFamily="Adobe Myungjo Std M"/>
+        <Button x:Name="Clear" Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="143,187,0,0" Foreground="#FFD3A312" Click="Clear_Click" Background="#FF681E1E" Height="21" FontSize="12" FontFamily="Adobe Myungjo Std M"/>
         <Button x:Name="cancle" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="265,187,0,0" Foreground="#FFD3A312" Click="Cancle_Click" Background="#FF681E1E" Height="21" FontSize="12" FontFamily="Adobe Myungjo Std M"/>
 
 

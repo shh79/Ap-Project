@@ -44,7 +44,7 @@ namespace WpfApp1
 
                     writer.Close();
 
-                    MessageBoxResult r = MessageBox.Show("Password Changed .", "Successful", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBoxResult r = MessageBox.Show("The Password Changed .", "Successful", MessageBoxButton.OK, MessageBoxImage.Information);
 
                     if (r == MessageBoxResult.OK)
                     {
@@ -64,7 +64,7 @@ namespace WpfApp1
 
         }
 
-        private void New_Click(object sender, RoutedEventArgs e)
+        private void Clear_Click(object sender, RoutedEventArgs e)
         {
             Cpass.Password = "";
             Npass.Password = "";

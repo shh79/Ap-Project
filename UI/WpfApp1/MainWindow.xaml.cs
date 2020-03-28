@@ -71,7 +71,10 @@ namespace WpfApp1
 
         private void save_Click(object sender, RoutedEventArgs e)
         {
-            
+            StreamWriter writer = new StreamWriter("test.txt");
+            writer.WriteLine(textbox1.Text);
+
+            writer.Close();
         }
 
         private void load_Click(object sender, RoutedEventArgs e)
@@ -120,6 +123,64 @@ namespace WpfApp1
             Changepass win = new Changepass();
 
             win.ShowDialog();
+        }
+
+       
+
+        private void def(object sender, RoutedEventArgs e)
+        {
+            MainWindow newform = new MainWindow();
+
+            newform.Show();
+
+            this.Close();
+        }
+
+        private void changetogray(object sender, RoutedEventArgs e)
+        {
+            BackGrnd.Background = Brushes.Gray;
+            clr2.IsChecked = false;
+            clr3.IsChecked = false;
+            clr4.IsChecked = false;
+            clr5.IsChecked = false;
+        }
+
+        private void changetoyellow(object sender, RoutedEventArgs e)
+        {
+            BackGrnd.Background = Brushes.LightYellow;
+            clr1.IsChecked = false;
+            clr3.IsChecked = false;
+            clr4.IsChecked = false;
+            clr5.IsChecked = false;
+        }
+
+        private void changetowhite(object sender, RoutedEventArgs e)
+        {
+            BackGrnd.Background = Brushes.White;
+            clr1.IsChecked = false;
+            clr2.IsChecked = false;
+            clr4.IsChecked = false;
+            clr5.IsChecked = false;
+        }
+
+        private void changetoBlue(object sender, RoutedEventArgs e)
+        {
+            BackGrnd.Background = Brushes.LightBlue;
+            clr1.IsChecked = false;
+            clr2.IsChecked = false;
+            clr3.IsChecked = false;
+            clr5.IsChecked = false;
+        }
+
+        private void changeto(object sender, RoutedEventArgs e)
+        {
+
+
+            BackGrnd.Background = Brushes.LightGreen;
+            clr1.IsChecked = false;
+            clr2.IsChecked = false;
+            clr3.IsChecked = false;
+            clr4.IsChecked = false;
         }
     }
 }
