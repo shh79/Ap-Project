@@ -101,8 +101,13 @@
 
                     <Button Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Margin="491,3,0,0" Height="35" Background="#FF681E1E" Click="Exit_click" Foreground="#FFD3A312" OpacityMask="#FF2A2A2C" RenderTransformOrigin="0.474,-0.326" FontFamily="Adobe Myungjo Std M" FontSize="14"/>
                     <Button Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Margin="451,3,0,0" Height="35" Background="#FF681E1E" Click="Minimize_click" Foreground="#FFD3A312" OpacityMask="#FF2A2A2C"/>
-                    <Button Content="Change Password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="236" Margin="152,107,0,0" Height="60" Click="Changepass" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="20" Foreground="#FFD3A312"/>
-                    <CheckBox x:Name="clr1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="124,405,0,0" Height="14" Width="16" Background="Gray" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="Black" Checked="changetogray">
+                    <Button Content="Change Password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="195" Margin="49,106,0,0" Height="60" Click="Changepass" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="20" Foreground="#FFD3A312"/>
+
+                    <Button Content="Manage Users" HorizontalAlignment="Left" VerticalAlignment="Top" Width="195" Margin="282,106,0,0" Height="60" Click="manageuser" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="20" Foreground="#FFD3A312"/>
+
+
+
+                    <CheckBox x:Name="clr1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="124,371,0,0" Height="14" Width="16" Background="Gray" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="Black" Checked="changetogray">
                         <CheckBox.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform ScaleX="10" ScaleY="15"/>
@@ -113,7 +118,7 @@
                         </CheckBox.RenderTransform>
                     </CheckBox>
 
-                    <CheckBox x:Name="clr5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="264,579,0,0" Height="14" Width="16" Background="LightGreen" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="Black" Checked="changeto">
+                    <CheckBox x:Name="clr5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="264,545,0,0" Height="14" Width="16" Background="LightGreen" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="Black" Checked="changeto">
                         <CheckBox.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform ScaleX="10" ScaleY="15"/>
@@ -124,7 +129,7 @@
                         </CheckBox.RenderTransform>
                     </CheckBox>
 
-                    <CheckBox x:Name="clr4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="124,578,0,0" Height="14" Width="16" Background="LightBlue" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="Black" Checked="changetoBlue">
+                    <CheckBox x:Name="clr4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="124,544,0,0" Height="14" Width="16" Background="LightBlue" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="Black" Checked="changetoBlue">
                         <CheckBox.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform ScaleX="10" ScaleY="15"/>
@@ -135,7 +140,7 @@
                         </CheckBox.RenderTransform>
                     </CheckBox>
 
-                    <CheckBox x:Name="clr2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="264,405,0,0" Height="14" Width="16" Background="LightYellow" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="Black" Checked="changetoyellow">
+                    <CheckBox x:Name="clr2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="264,371,0,0" Height="14" Width="16" Background="LightYellow" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="Black" Checked="changetoyellow">
                         <CheckBox.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform ScaleX="10" ScaleY="15"/>
@@ -146,7 +151,7 @@
                         </CheckBox.RenderTransform>
                     </CheckBox>
 
-                    <CheckBox x:Name="clr3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="406,405,0,0" Height="14" Width="16" Background="White" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="Black" Checked="changetowhite">
+                    <CheckBox x:Name="clr3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="406,371,0,0" Height="14" Width="16" Background="White" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="Black" Checked="changetowhite">
                         <CheckBox.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform ScaleX="10" ScaleY="15"/>
@@ -157,7 +162,7 @@
                         </CheckBox.RenderTransform>
                     </CheckBox>
 
-                    <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="406,579,0,0" Height="14" Width="16" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="Black" Checked="def">
+                    <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="406,545,0,0" Height="14" Width="16" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="Black" Checked="def">
                         <CheckBox.Background>
                             <ImageBrush ImageSource="img/1.jpg"/>
                         </CheckBox.Background>
@@ -171,7 +176,7 @@
                         </CheckBox.RenderTransform>
                     </CheckBox>
 
-                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Select the background color :" VerticalAlignment="Top" Margin="31,243,0,0" FontFamily="Adobe Myungjo Std M" FontSize="24"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Select the background color :" VerticalAlignment="Top" Margin="31,209,0,0" FontFamily="Adobe Myungjo Std M" FontSize="24"/>
 
                 </Grid>
 

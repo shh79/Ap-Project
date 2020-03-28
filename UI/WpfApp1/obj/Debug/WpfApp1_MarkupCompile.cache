@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\دانشگاه\Term2\AP Project\UI\WpfApp1\obj\Debug\
+E:\IUST\Term2\AP Project\UI\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-E:\دانشگاه\Term2\AP Project\UI\WpfApp1\App.xaml
-3613677645
+E:\IUST\Term2\AP Project\UI\WpfApp1\App.xaml
+6-88224090
 
-7-128544566
+101192309994
 13-1505183044
-Changepass.xaml;loginpass.xaml;MainWindow.xaml;
+adduser.xaml;Changepass.xaml;loginpass.xaml;MainWindow.xaml;manageusers.xaml;removeuser.xaml;
 
 False
 

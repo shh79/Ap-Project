@@ -182,5 +182,21 @@ namespace WpfApp1
             clr3.IsChecked = false;
             clr4.IsChecked = false;
         }
+
+        private void manageuser(object sender, RoutedEventArgs e)
+        {
+            string currentuser = loginpass.user;
+
+            if (currentuser == "Admin")
+            {
+                manageusers win = new manageusers();
+
+                win.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Just admin can manage users .","Access denied !!!",MessageBoxButton.OK,MessageBoxImage.Warning);
+            }
+        }
     }
 }

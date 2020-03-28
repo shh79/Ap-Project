@@ -11,16 +11,20 @@
     </Window.Background>
     <Grid>
 
-        <PasswordBox x:Name="passbar" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="129,103,0,0" Width="230" Height="33" FontSize="18"/>
-        <Button Content="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="107,176,0,0" Foreground="#FFD3A312" Click="Button_Click" Background="#FF681E1E" Height="32" FontSize="18" FontFamily="Adobe Myungjo Std M"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password :" VerticalAlignment="Top" Margin="22,100,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="18"/>
-        <Image Height="61" VerticalAlignment="Top" Source="img/IUSTlogo.png" Margin="316,158,12.6,0"/>
+        <PasswordBox x:Name="passbar" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="129,129,0,0" Width="230" Height="33" FontSize="18"/>
+        <Button Content="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="107,183,0,0" Foreground="#FFD3A312" Click="Button_Click" Background="#FF681E1E" Height="32" FontSize="18" FontFamily="Adobe Myungjo Std M"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password :" VerticalAlignment="Top" Margin="22,126,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="18"/>
+        <Image Height="61" VerticalAlignment="Top" Source="img/IUSTlogo.png" Margin="316,165,12.6,0"/>
         <DockPanel HorizontalAlignment="Left" Height="35" LastChildFill="False" VerticalAlignment="Top" Width="386" Margin="0,0,-0.4,0" Background="#FF2A2A2C"/>
         <Button Content="Exit" HorizontalAlignment="Left" Height="35" Width="35" Margin="349,0,0,193" Background="#FF681E1E" Click="Exit_click" Foreground="#FFD3A312" OpacityMask="#FF2A2A2C" FontFamily="Adobe Myungjo Std M" FontSize="14"/>
 
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Default pass is : 0000" VerticalAlignment="Top" Margin="100,46,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Default user and pass is : Admin" VerticalAlignment="Top" Margin="51,46,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="18"/>
 
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Created by SeyedHessam Hosseini" VerticalAlignment="Top" Margin="10,4,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="14"/>
+
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Username :" VerticalAlignment="Top" Margin="22,85,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="18"/>
+        <TextBox x:Name="userbar" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Height="33" FontSize="18" Margin="129,87,0,0"/>
 
 
     </Grid>

@@ -20,8 +20,8 @@ namespace WpfApp1
     /// </summary>
     public partial class loginpass : Window
     {
-
-        public string pass = "";
+        static public string user = "";
+        static public string pass = "";
 
         public loginpass()
         {
@@ -36,23 +36,49 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            user = userbar.Text;
+
+            string path= @"E:\IUST\Term2\AP Project\UI\WpfApp1\bin\Debug\user\";
+            path += user;
+            path += ".txt";
+
+            try
+            {
+                StreamReader reader = new StreamReader(path);
+                pass = reader.ReadLine();
+
+                reader.Close();
+            }
+            catch
+            {
+                MessageBox.Show("There isn't this username !!!", "Ops !", MessageBoxButton.OK, MessageBoxImage.Warning);
+
+                userbar.Text = "";
+                passbar.Password = "";
+
+                goto end;
+            }
+
             if (passbar.Password == pass)
             {
-                
+
                 MainWindow main = new MainWindow();
                 this.Close();
                 main.ShowDialog();
-                
+
             }
             else
             {
-               MessageBoxResult r = MessageBox.Show("Wrong Password", "Error", MessageBoxButton.OKCancel, MessageBoxImage.Error);
+                MessageBoxResult r = MessageBox.Show("Wrong Password", "Error", MessageBoxButton.OKCancel, MessageBoxImage.Error);
                 passbar.Password = "";
                 if (r == MessageBoxResult.Cancel)
                 {
                     this.Close();
                 }
             }
+
+        end:
+            ;
         }
 
         private void Exit_click(object sender, RoutedEventArgs e)

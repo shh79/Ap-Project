@@ -27,18 +27,29 @@ namespace WpfApp1
 
         private void confirm_Click(object sender, RoutedEventArgs e)
         {
+            string user = loginpass.user;
             string pass = "";
-            StreamReader reader = new StreamReader("pass.txt");
+
+            string path = @"E:\IUST\Term2\AP Project\UI\WpfApp1\bin\Debug\user\";
+
+            path += user;
+
+            path += ".txt";
+
+            StreamReader reader = new StreamReader(path);
 
             pass = reader.ReadLine();
 
             reader.Close();
 
+            
+
             if (pass == Cpass.Password)
             {
                 if (Npass.Password == RNpass.Password)
                 {
-                    StreamWriter writer = new StreamWriter("pass.txt");
+                   
+                    StreamWriter writer = new StreamWriter(path);
 
                     writer.WriteLine(Npass.Password);
 
