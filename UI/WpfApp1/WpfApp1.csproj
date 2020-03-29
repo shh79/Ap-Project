@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="changename.xaml.cs">
+      <DependentUpon>changename.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edituser.xaml.cs">
+      <DependentUpon>Edituser.xaml</DependentUpon>
+    </Compile>
     <Compile Include="removeuser.xaml.cs">
       <DependentUpon>removeuser.xaml</DependentUpon>
     </Compile>
@@ -62,7 +68,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="changename.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Changepass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edituser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

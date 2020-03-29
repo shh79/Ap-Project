@@ -11,18 +11,28 @@
     </Window.Background>
     <Grid>
 
-        <PasswordBox x:Name="passbar" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="129,120,0,0" Width="230" Height="33" FontSize="18"/>
-        <Button Content="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="42,176,0,0" Foreground="#FFD3A312" Click="Button_Click" Background="#FF681E1E" Height="32" FontSize="18" FontFamily="Adobe Myungjo Std M"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password :" VerticalAlignment="Top" Margin="22,117,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="18"/>
+        <PasswordBox x:Name="passbar" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,136,0,0" Width="230" Height="33" FontSize="18"/>
+        <Button Content="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="42,182,0,0" Foreground="#FFD3A312" Click="Button_Click" Background="#FF681E1E" Height="32" FontSize="18" FontFamily="Adobe Myungjo Std M"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password :" VerticalAlignment="Top" Margin="24,133,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="18"/>
         <DockPanel HorizontalAlignment="Left" Height="35" LastChildFill="False" VerticalAlignment="Top" Width="386" Margin="0,0,-0.4,0" Background="#FF2A2A2C"/>
 
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Add User" VerticalAlignment="Top" Margin="149,0,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="18"/>
 
 
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Username :" VerticalAlignment="Top" Margin="22,67,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="18"/>
-        <TextBox x:Name="userbar" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Height="33" FontSize="18" Margin="129,69,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Username :" VerticalAlignment="Top" Margin="24,83,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="18"/>
+        <TextBox x:Name="userbar" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Height="33" FontSize="18" Margin="131,85,0,0"/>
 
-        <Button Content="Cancle" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="206,176,0,0" Foreground="#FFD3A312" Click="Button1_Click" Background="#FF681E1E" Height="32" FontSize="18" FontFamily="Adobe Myungjo Std M"/>
+        <Button Content="Cancle" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="206,182,0,0" Foreground="#FFD3A312" Click="Button1_Click" Background="#FF681E1E" Height="32" FontSize="18" FontFamily="Adobe Myungjo Std M"/>
+        <CheckBox x:Name="Access" Content="Administerator Access" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="56,51,0,0" RenderTransformOrigin="0.5,0.5" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="10" Checked="Access_Checked">
+            <CheckBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </CheckBox.RenderTransform>
+        </CheckBox>
 
 
     </Grid>

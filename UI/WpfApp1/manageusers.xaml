@@ -12,23 +12,14 @@
     <Grid>
         <DockPanel HorizontalAlignment="Left" Height="35" LastChildFill="False" VerticalAlignment="Top" Width="800" Margin="0,0,-0.4,0" Background="#FF2A2A2C"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Administrator Panel" VerticalAlignment="Top" Margin="310,-3,0,0" Foreground="#FFD3A312" FontFamily="Adobe Myungjo Std M" FontSize="20"/>
-        <Button x:Name="Add_User" Content="Add User" HorizontalAlignment="Left" Height="62" Margin="477,106,0,0" VerticalAlignment="Top" Width="262"  Foreground="#FFD3A312" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="22" Click="Add_User_Click"/>
-        <Button x:Name="Remove_User" Content="Remove User" HorizontalAlignment="Left" Height="62" Margin="477,210,0,0" VerticalAlignment="Top" Width="262"  Foreground="#FFD3A312" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="22" Click="Remove_User_Click"/>
-        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Height="62" Margin="477,312,0,0" VerticalAlignment="Top" Width="262"  Foreground="#FFD3A312" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="22" Click="Back_Click"/>
-        <ListBox HorizontalAlignment="Left" Height="268" VerticalAlignment="Top" Width="366" Margin="53,106,0,0" FontSize="20">
+        <Button x:Name="Add_User" Content="Add User" HorizontalAlignment="Left" Height="42" Margin="481,107,0,0" VerticalAlignment="Top" Width="262"  Foreground="#FFD3A312" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="22" Click="Add_User_Click"/>
+        <Button x:Name="Remove_User" IsEnabled="{Binding ElementName=userlist, Path=SelectedItems.Count}"  Content="Remove User" HorizontalAlignment="Left" Height="42" Margin="481,257,0,0" VerticalAlignment="Top" Width="262"  Foreground="#FFD3A312" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="22" Click="Remove_User_Click"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Height="42" Margin="481,331,0,0" VerticalAlignment="Top" Width="262"  Foreground="#FFD3A312" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="22" Click="Back_Click"/>
+        <Button x:Name="Edit_User" IsEnabled="{Binding ElementName=userlist, Path=SelectedItems.Count}"  Content="Edit User" HorizontalAlignment="Left" Height="42" Margin="481,182,0,0" VerticalAlignment="Top" Width="262"  Foreground="#FFD3A312" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="22" Click="Edit_User_Click"/>
 
-            <ListBoxItem Content="Coffie"></ListBoxItem>
-            <ListBoxItem Content="Tea"></ListBoxItem>
-            <ListBoxItem Content="Orange Juice"></ListBoxItem>
-            <ListBoxItem Content="Milk"></ListBoxItem>
-            <ListBoxItem Content="Iced Tea"></ListBoxItem>
-            <ListBoxItem Content="Mango Shake"></ListBoxItem>
-            <ListBoxItem Content="Coffie"></ListBoxItem>
-            <ListBoxItem Content="Tea"></ListBoxItem>
-            <ListBoxItem Content="Orange Juice"></ListBoxItem>
-            <ListBoxItem Content="Milk"></ListBoxItem>
-            <ListBoxItem Content="Iced Tea"></ListBoxItem>
-            <ListBoxItem Content="Mango Shake"></ListBoxItem>
+        <ListBox x:Name="userlist" HorizontalAlignment="Left" Height="268" VerticalAlignment="Top" Width="366" Margin="53,106,0,0" FontSize="20">
+
+
 
         </ListBox>
 

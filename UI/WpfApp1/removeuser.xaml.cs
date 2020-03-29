@@ -25,6 +25,8 @@ namespace WpfApp1
             InitializeComponent();
         }
 
+        public string output = "";
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string user = userbar.Text;
@@ -35,17 +37,26 @@ namespace WpfApp1
 
             if (File.Exists(path))
             {
-                MessageBoxResult r = MessageBox.Show("Are you sure ??", "Delete this user", MessageBoxButton.YesNo, MessageBoxImage.Question);
-
-                if (r == MessageBoxResult.Yes)
+                if (userbar.Text != "Admin")
                 {
-                    File.Delete(path);
-                    MessageBox.Show("User deleted", "Succssful", MessageBoxButton.OK, MessageBoxImage.Information);
-                    userbar.Text = "";
+                    MessageBoxResult r = MessageBox.Show("Are you sure ??", "Delete this user", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                    if (r == MessageBoxResult.Yes)
+                    {
+                        File.Delete(path);
+                        MessageBox.Show("User deleted", "Succssful", MessageBoxButton.OK, MessageBoxImage.Information);
+                        output = userbar.Text;
+                        userbar.Text = "";
+                        this.Close();
+                    }
+                    else
+                    {
+                        userbar.Text = "";
+                    }
                 }
                 else
                 {
-                    userbar.Text = "";
+                    MessageBox.Show("You can't remove your account .", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             else

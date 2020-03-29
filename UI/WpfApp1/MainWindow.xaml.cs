@@ -35,7 +35,11 @@ namespace WpfApp1
 
             if (r == MessageBoxResult.Yes)
             {
+                loginpass win = new loginpass();
+
                 Close();
+
+                win.ShowDialog();
             }
         }
 
@@ -183,13 +187,63 @@ namespace WpfApp1
             clr4.IsChecked = false;
         }
 
+
+        private void userlist(out string[] files)
+        {
+            string path = @"E:\IUST\Term2\AP Project\UI\WpfApp1\bin\Debug\user";
+
+            files = System.IO.Directory.GetFiles(path, "*.txt");
+
+            for (int i = 0; i < files.Length; ++i)
+            {
+                files[i] = files[i].Remove(0, 51);
+                files[i] = files[i].Remove(files[i].Length - 4);
+            }
+        }
+
         private void manageuser(object sender, RoutedEventArgs e)
         {
+            string path = @"E:\IUST\Term2\AP Project\UI\WpfApp1\bin\Debug\user\";
+
             string currentuser = loginpass.user;
 
-            if (currentuser == "Admin")
+            path += currentuser;
+            path += ".txt";
+
+            StreamReader reader = new StreamReader(path);
+
+            string check = "";
+
+            bool flag = false;
+
+            for(int i = 0; i < 3; ++i)
+            {
+                check = reader.ReadLine();
+            }
+
+            if (check == "ACCESS")
+            {
+                flag = true;
+            }
+
+            reader.Close();
+
+            if (flag)
             {
                 manageusers win = new manageusers();
+
+                string[] f;
+                userlist(out f);
+
+                for(int i = 0; i < f.Length; ++i)
+                {
+                    if (f[i] == "Developer")
+                    {
+                        continue;
+                    }
+
+                    win.userlist.Items.Add(f[i]);
+                }
 
                 win.ShowDialog();
             }
@@ -197,6 +251,13 @@ namespace WpfApp1
             {
                 MessageBox.Show("Just admin can manage users .","Access denied !!!",MessageBoxButton.OK,MessageBoxImage.Warning);
             }
+        }
+
+        private void Changename(object sender, RoutedEventArgs e)
+        {
+            changename win = new changename();
+
+            win.ShowDialog();
         }
     }
 }

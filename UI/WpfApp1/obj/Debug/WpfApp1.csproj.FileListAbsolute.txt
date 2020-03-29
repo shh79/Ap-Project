@@ -56,3 +56,7 @@ E:\IUST\Term2\AP Project\UI\WpfApp1\obj\Debug\adduser.g.cs
 E:\IUST\Term2\AP Project\UI\WpfApp1\obj\Debug\adduser.baml
 E:\IUST\Term2\AP Project\UI\WpfApp1\obj\Debug\removeuser.g.cs
 E:\IUST\Term2\AP Project\UI\WpfApp1\obj\Debug\removeuser.baml
+E:\IUST\Term2\AP Project\UI\WpfApp1\obj\Debug\Edituser.g.cs
+E:\IUST\Term2\AP Project\UI\WpfApp1\obj\Debug\Edituser.baml
+E:\IUST\Term2\AP Project\UI\WpfApp1\obj\Debug\changename.g.cs
+E:\IUST\Term2\AP Project\UI\WpfApp1\obj\Debug\changename.baml

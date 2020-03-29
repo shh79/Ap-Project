@@ -101,7 +101,10 @@
 
                     <Button Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Margin="491,3,0,0" Height="35" Background="#FF681E1E" Click="Exit_click" Foreground="#FFD3A312" OpacityMask="#FF2A2A2C" RenderTransformOrigin="0.474,-0.326" FontFamily="Adobe Myungjo Std M" FontSize="14"/>
                     <Button Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Margin="451,3,0,0" Height="35" Background="#FF681E1E" Click="Minimize_click" Foreground="#FFD3A312" OpacityMask="#FF2A2A2C"/>
-                    <Button Content="Change Password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="195" Margin="49,106,0,0" Height="60" Click="Changepass" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="20" Foreground="#FFD3A312"/>
+                    <Button Content="Change Username" HorizontalAlignment="Left" VerticalAlignment="Top" Width="195" Margin="49,68,0,0" Height="60" Click="Changename" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="20" Foreground="#FFD3A312"/>
+
+                    <Button Content="Change Password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="195" Margin="49,144,0,0" Height="60" Click="Changepass" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="20" Foreground="#FFD3A312"/>
+
 
                     <Button Content="Manage Users" HorizontalAlignment="Left" VerticalAlignment="Top" Width="195" Margin="282,106,0,0" Height="60" Click="manageuser" Background="#FF681E1E" FontFamily="Adobe Myungjo Std M" FontSize="20" Foreground="#FFD3A312"/>
 

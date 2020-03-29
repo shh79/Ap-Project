@@ -30,6 +30,7 @@ namespace WpfApp1
             this.Close();
         }
 
+        public string output = "";
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -54,12 +55,24 @@ namespace WpfApp1
 
                     StreamWriter writer = new StreamWriter(path);
                     writer.WriteLine(passbar.Password);
+
+                    if (Access.IsChecked == true)
+                    {
+                        writer.WriteLine();
+                        writer.WriteLine("ACCESS");
+                    }
+
+
                     writer.Close();
+
+                    output = userbar.Text; 
 
                     MessageBox.Show("New user added .", "Successful", MessageBoxButton.OK, MessageBoxImage.Information);
 
                     userbar.Text = "";
                     passbar.Password = "";
+
+                    this.Close();
 
                 }
             }
@@ -67,6 +80,11 @@ namespace WpfApp1
             {
                 MessageBox.Show("Username can not be empty .", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
+        }
+
+        private void Access_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

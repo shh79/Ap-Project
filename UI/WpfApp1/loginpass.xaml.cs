@@ -27,11 +27,6 @@ namespace WpfApp1
         {
             InitializeComponent();
 
-            StreamReader reader = new StreamReader("pass.txt");
-
-            pass = reader.ReadLine();
-
-            reader.Close();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

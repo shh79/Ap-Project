@@ -39,6 +39,8 @@ namespace WpfApp1
             StreamReader reader = new StreamReader(path);
 
             pass = reader.ReadLine();
+            reader.ReadLine();
+            string check = reader.ReadLine();
 
             reader.Close();
 
@@ -52,6 +54,10 @@ namespace WpfApp1
                     StreamWriter writer = new StreamWriter(path);
 
                     writer.WriteLine(Npass.Password);
+
+                    writer.WriteLine();
+
+                    writer.WriteLine(check);
 
                     writer.Close();
 
