@@ -38,7 +38,14 @@ namespace WpfApp1
 
             if (adduser != "")
             {
-                userlist.Items.Add(adduser);
+                Label ll = new Label();
+                ll.Content = adduser;
+                if (win.Access.IsChecked == true)
+                {
+                    ll.Foreground = Brushes.Green;
+                }
+                userlist.Items.Add(ll);
+                
             }
         }
 
@@ -53,42 +60,47 @@ namespace WpfApp1
 
             string name = userlist.SelectedItem.ToString();
 
-            string path = @"E:\IUST\Term2\AP Project\UI\WpfApp1\bin\Debug\user\";
-
-            path += name;
-            path += ".txt";
-
-            string check = "";
-
-            StreamReader reader = new StreamReader(path);
-
-            for(int i = 0; i < 3; ++i)
+            if (name != loginpass.user)
             {
-                check = reader.ReadLine();
-            }
 
-            reader.Close();
+                string path = @"E:\IUST\Term2\AP Project\UI\WpfApp1\bin\Debug\user\";
+
+                path += name;
+                path += ".txt";
+
+                string check = "";
+
+                StreamReader reader = new StreamReader(path);
+
+                for (int i = 0; i < 3; ++i)
+                {
+                    check = reader.ReadLine();
+                }
+
+                reader.Close();
 
 
-            if(check=="ACCESS" && loginpass.user != "Developer")
-            {
-                MessageBox.Show("Only developer can remove admins .", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                if (check == "ACCESS" && loginpass.user != "Developer")
+                {
+                    MessageBox.Show("Only developer can remove admins .", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else
+                {
+                    MessageBoxResult r = MessageBox.Show("Are you sure ??", "Delete this user", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                    if (r == MessageBoxResult.Yes)
+                    {
+                        File.Delete(path);
+                        MessageBox.Show("User deleted", "Succssful", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                        userlist.Items.Remove(name);
+                    }
+                }
             }
             else
             {
-                MessageBoxResult r = MessageBox.Show("Are you sure ??", "Delete this user", MessageBoxButton.YesNo, MessageBoxImage.Question);
-
-                if (r == MessageBoxResult.Yes)
-                {
-                    File.Delete(path);
-                    MessageBox.Show("User deleted", "Succssful", MessageBoxButton.OK, MessageBoxImage.Information);
-
-                    userlist.Items.Remove(name);
-                }
+                MessageBox.Show("You can not remove yourself .", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-
-           
-
         }
 
        
@@ -109,7 +121,10 @@ namespace WpfApp1
             win.ShowDialog();
 
             userlist.Items.Remove(userlist.SelectedItem);
+
+            
             userlist.Items.Add(win.user);
+            
         }
 
         private void Edit_User_Click(object sender, RoutedEventArgs e)

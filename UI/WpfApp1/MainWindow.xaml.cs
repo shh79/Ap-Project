@@ -243,6 +243,7 @@ namespace WpfApp1
                     }
 
                     win.userlist.Items.Add(f[i]);
+
                 }
 
                 win.ShowDialog();

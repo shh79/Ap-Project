@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
 
-    Title="MainWindow" Height="724.971" Width="532.346" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None">
+    Title="MainWindow" Icon="img/IUSTicon.ico" Height="724.971" Width="532.346" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None">
     <Grid x:Name="BackGrnd">
 
         <Grid.Background>
@@ -179,7 +179,7 @@
                         </CheckBox.RenderTransform>
                     </CheckBox>
 
-                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Select the background color :" VerticalAlignment="Top" Margin="31,209,0,0" FontFamily="Adobe Myungjo Std M" FontSize="24"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Select the background color :" VerticalAlignment="Top" Margin="31,219,0,0" FontFamily="Adobe Myungjo Std M" FontSize="24"/>
 
                 </Grid>
 

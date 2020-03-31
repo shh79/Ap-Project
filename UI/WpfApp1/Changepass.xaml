@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Changepass" Height="228.334" Width="385.333" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen">
+        Title="Changepass" Icon="img/IUSTicon.ico" Height="228.334" Width="385.333" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="img/1.jpg"/>
     </Window.Background>
