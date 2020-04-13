@@ -30,7 +30,7 @@ namespace WpfApp1
             this.Close();
         }
 
-        public string output = "";
+        public string output = null;
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -40,7 +40,8 @@ namespace WpfApp1
             if (user.Length != 0)
             {
 
-                string path = @"E:\IUST\Term2\AP Project\UI\WpfApp1\bin\Debug\user\";
+                string path = Environment.CurrentDirectory;
+                path += @"\user\";
                 path += user;
                 path += ".txt";
 
@@ -65,7 +66,8 @@ namespace WpfApp1
 
                     writer.Close();
 
-                    output = userbar.Text; 
+                    output = userbar.Text;
+
 
                     MessageBox.Show("New user added .", "Successful", MessageBoxButton.OK, MessageBoxImage.Information);
 

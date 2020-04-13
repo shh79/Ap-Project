@@ -31,7 +31,8 @@ namespace WpfApp1
         {
             string user = userbar.Text;
 
-            string path = @"E:\IUST\Term2\AP Project\UI\WpfApp1\bin\Debug\user\";
+            string path = Environment.CurrentDirectory;
+            path += @"\user\";
             path += user;
             path += ".txt";
 

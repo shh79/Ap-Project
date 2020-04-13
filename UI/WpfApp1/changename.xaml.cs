@@ -32,14 +32,16 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string path = @"E:\IUST\Term2\AP Project\UI\WpfApp1\bin\Debug\user\";
+            string path = Environment.CurrentDirectory;
+            path += @"\user\";
 
             string name = loginpass.user;
 
             path += name;
             path += ".txt";
 
-            string path2 = @"E:\IUST\Term2\AP Project\UI\WpfApp1\bin\Debug\user\";
+            string path2 = Environment.CurrentDirectory;
+            path2 += @"\user\";
             path2 += userbar.Text;
             path2 += ".txt";
 

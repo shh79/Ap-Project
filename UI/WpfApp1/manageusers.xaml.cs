@@ -34,9 +34,30 @@ namespace WpfApp1
             }
             win.ShowDialog();
 
-            string adduser = win.output;
+            manageusers newform = new manageusers();
 
-            if (adduser != "")
+            string[] f;
+
+            MainWindow.userlist(out f);
+
+            for (int i = 0; i < f.Length; ++i)
+            {
+                if (f[i] == "Developer")
+                {
+                    continue;
+                }
+
+                newform.userlist.Items.Add(f[i]);
+
+            }
+
+            newform.ShowDialog();
+
+            this.Close();
+
+            /*string adduser = win.output;
+
+            if (adduser != null)
             {
                 Label ll = new Label();
                 ll.Content = adduser;
@@ -46,7 +67,7 @@ namespace WpfApp1
                 }
                 userlist.Items.Add(ll);
                 
-            }
+            }*/
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
@@ -60,10 +81,12 @@ namespace WpfApp1
 
             string name = userlist.SelectedItem.ToString();
 
+
             if (name != loginpass.user)
             {
 
-                string path = @"E:\IUST\Term2\AP Project\UI\WpfApp1\bin\Debug\user\";
+                string path = Environment.CurrentDirectory;
+                path += @"\user\";
 
                 path += name;
                 path += ".txt";
@@ -129,7 +152,8 @@ namespace WpfApp1
 
         private void Edit_User_Click(object sender, RoutedEventArgs e)
         {
-            string path = @"E:\IUST\Term2\AP Project\UI\WpfApp1\bin\Debug\user\";
+            string path = Environment.CurrentDirectory;
+            path += @"\user\";
 
             path += userlist.SelectedItem.ToString();
 

@@ -188,22 +188,29 @@ namespace WpfApp1
         }
 
 
-        private void userlist(out string[] files)
+        public static void userlist(out string[] files)
         {
-            string path = @"E:\IUST\Term2\AP Project\UI\WpfApp1\bin\Debug\user";
+            string path = Environment.CurrentDirectory;
+            path += @"\user";
 
             files = System.IO.Directory.GetFiles(path, "*.txt");
-
+            
+            
             for (int i = 0; i < files.Length; ++i)
             {
-                files[i] = files[i].Remove(0, 51);
+                //51
+                files[i] = files[i].Remove(0, path.Length + 1);
+
                 files[i] = files[i].Remove(files[i].Length - 4);
             }
         }
 
+        
+
         private void manageuser(object sender, RoutedEventArgs e)
         {
-            string path = @"E:\IUST\Term2\AP Project\UI\WpfApp1\bin\Debug\user\";
+            string path = Environment.CurrentDirectory;
+            path += @"\user\";
 
             string currentuser = loginpass.user;
 
